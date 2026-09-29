@@ -27,10 +27,10 @@ export const portfolio = {
   skills: ['Python', 'C', 'C++', 'Java', 'JavaScript', 'SQL', 'React', 'Flask', 'MySQL', 'AWS', 'Linux', 'Storybook', 'REST APIs', 'Git'],
   projects: [
     {
-      title: 'Google A2UI Component Automation',
+      title: 'A2UI Component Catalog Automation',
       category: 'Developer tooling · AI interfaces',
-      description: 'Automated A2UI catalog generation for 100+ ShadCN and Material Design 3 components—including higher-level domain components—by transforming React and Storybook.js components into searchable JSON with Tailwind CSS and REST APIs.',
-      tags: ['React', 'Storybook.js', 'ShadCN', 'Material Design 3', 'Tailwind CSS', 'REST API'],
+      description: 'Automated reusable React and Storybook.js components into A2UI-compatible JSON catalogs, cataloging 100+ ShadCN and Material Design 3 components and integrating the Gemini API and REST endpoints for searchable, AI-driven interface generation.',
+      tags: ['React', 'Storybook.js', 'A2UI', 'ShadCN', 'Material Design 3', 'Gemini API', 'Tailwind CSS', 'REST API'],
       href: 'https://github.com/ericzdong/storybook-shadcn-components',
       accent: '#4f46e5',
       surface: '#e6e8ff',
