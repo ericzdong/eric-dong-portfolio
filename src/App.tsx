@@ -18,6 +18,7 @@ import gala1 from '@/assets/liondance-web/gala-1.jpg'
 import gala2 from '@/assets/liondance-web/gala-2.jpg'
 import gala3 from '@/assets/liondance-web/gala-3.jpg'
 import teamPhoto from '@/assets/liondance-web/team.jpg'
+import headshot from '@/assets/headshot-web.jpg'
 import './App.css'
 
 const dayNavItems = [
@@ -126,8 +127,14 @@ function App() {
               <Card className="profile-panel">
                 <CardContent className="profile-content">
                   <div className="profile-top">
-                    <div className="profile-monogram" aria-hidden="true">{portfolio.initials}</div>
-                    <Badge variant="secondary" className="profile-badge"><span /> Open to opportunities</Badge>
+                    <img className="profile-headshot" src={headshot} alt="Eric Dong" />
+                    <div className="profile-top-actions">
+                      <Badge variant="secondary" className="profile-badge"><span /> Open to opportunities</Badge>
+                      <div className="profile-links" aria-label="Eric Dong on social media">
+                        <a href={portfolio.socials.linkedin} target="_blank" rel="noreferrer"><span className="profile-link-mark" aria-hidden="true">in</span> LinkedIn</a>
+                        <a href={portfolio.socials.github} target="_blank" rel="noreferrer"><span className="profile-link-mark" aria-hidden="true">gh</span> GitHub</a>
+                      </div>
+                    </div>
                   </div>
                   <div className="profile-copy">
                     <p>Current</p>
@@ -264,16 +271,16 @@ function App() {
           <div className="section-wrap lion-story-grid">
             <div><p className="section-number light">02</p><p className="eyebrow light">Why I lion dance</p><h2>More Than Just a Performance</h2></div>
             <div className="lion-story-copy">
-              <p>Lion dance has given me so much. It has introduced me to lifelong friendships, strengthened my discipline, sharpened my attention to detail, helped me refine my craftsmanship within this art form, and taught me the importance of preserving and sharing my culture.</p>
-              <p>Performing with a lion dance partner requires complete trust. Every movement must be synchronized, from matching each other&apos;s footsteps to executing difficult routines safely. Attention to detail is essential, especially during stunts when your partner is balanced above you and trusts you to keep them secure. That connection creates a strong bond built on communication, teamwork, and responsibility.</p>
-              <p>Whether I am performing at a wedding, Lunar New Year celebration, or Mid-Autumn Festival, I have the privilege of sharing the spirit of lion dance with people who may be experiencing it for the first time. The energy it brings to every event is truly special. For me, lion dance represents prosperity, good fortune, cultural pride, and the importance of giving back to the community.</p>
+              <div className="story-block"><h3>Craft</h3><p>Lion dance has given me so much. It has introduced me to lifelong friendships, strengthened my discipline, sharpened my attention to detail, helped me refine my craftsmanship within this art form, and taught me the importance of preserving and sharing my culture.</p></div>
+              <div className="story-block"><h3>Trust</h3><p>Performing with a lion dance partner requires complete trust. Every movement must be synchronized, from matching each other&apos;s footsteps to executing difficult routines safely. Attention to detail is essential, especially during stunts when your partner is balanced above you and trusts you to keep them secure. That connection creates a strong bond built on communication, teamwork, and responsibility.</p></div>
+              <div className="story-block"><h3>Community</h3><p>Whether I am performing at a wedding, Lunar New Year celebration, or Mid-Autumn Festival, I have the privilege of sharing the spirit of lion dance with people who may be experiencing it for the first time. The energy it brings to every event is truly special. For me, lion dance represents prosperity, good fortune, cultural pride, and the importance of giving back to the community.</p></div>
             </div>
           </div>
         </section>
 
         <section className="lion-connect-section" id="lion-connect">
           <div className="section-wrap lion-connect-inner">
-            <p className="section-number">04</p>
+            <p className="section-number">03</p>
             <p className="eyebrow">Let&apos;s connect</p>
             <div className="lion-connect-actions">
               <Button nativeButton={false} render={<a href={`mailto:${portfolio.email}`} />} size="lg">Say hello <Mail /></Button>

@@ -4,7 +4,7 @@ export type Project = {
   category: string
   description: string
   tags: string[]
-  href: string
+  href?: string
   accent: string
   surface: string
 }
@@ -17,7 +17,7 @@ export const portfolio = {
   location: 'Louisville, KY',
   availability: 'Open to software engineering opportunities',
   currentFocus: 'B.A. Computer Science · December 2026',
-  resumeUrl: '/Eric_Dong_Resume_fall2026.pdf',
+  resumeUrl: `${import.meta.env.BASE_URL}Eric_Dong_Resume_fall2026.pdf`,
   intro: 'I build practical software across web, cloud, AI tooling, and embedded systems—combining strong technical fundamentals with research-driven problem solving.',
   aboutHeading: 'Always learning. Passionate about solving problems.',
   about: [
@@ -31,7 +31,7 @@ export const portfolio = {
       category: 'Developer tooling · AI interfaces',
       description: 'Automated A2UI catalog generation for 100+ ShadCN and Material Design 3 components—including higher-level domain components—by transforming React and Storybook.js components into searchable JSON with Tailwind CSS and REST APIs.',
       tags: ['React', 'Storybook.js', 'ShadCN', 'Material Design 3', 'Tailwind CSS', 'REST API'],
-      href: '#',
+      href: 'https://github.com/ericzdong/storybook-shadcn-components',
       accent: '#4f46e5',
       surface: '#e6e8ff',
     },
@@ -40,7 +40,6 @@ export const portfolio = {
       category: 'Full-stack · Cloud deployment',
       description: 'Delivered a stable, production-ready vehicle management application by deploying Flask and MySQL behind Nginx on AWS EC2 and configuring secure Linux networking for cloud-hosted database and web operations.',
       tags: ['AWS EC2', 'Flask', 'MySQL', 'Nginx'],
-      href: '#',
       accent: '#0f766e',
       surface: '#dff7f3',
     },
@@ -49,7 +48,6 @@ export const portfolio = {
       category: 'Embedded systems · Sensors',
       description: 'Reached approximately 95% turbidity-detection accuracy during testing by programming C++ sensor logic and automated microcontroller responses for a water-filtration prototype.',
       tags: ['C++', 'Arduino', 'Sensors', 'Control logic'],
-      href: '#',
       accent: '#7c3aed',
       surface: '#eee5ff',
     },
