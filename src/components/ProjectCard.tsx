@@ -15,10 +15,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <h3>{project.title}</h3>
             <p className="project-description">{project.description}</p>
           </div>
-          <div className="project-meta">
-            {project.href
-              ? <ArrowUpRight className="project-arrow" aria-hidden="true" />
-              : <span className="project-status">Case study available on request</span>}
+          <div className={`project-meta${project.href ? '' : ' project-meta-static'}`}>
+            {project.href && <ArrowUpRight className="project-arrow" aria-hidden="true" />}
             <div className="project-tags">
             {project.tags.map((tag) => <Badge key={tag} variant="secondary">{tag}</Badge>)}
             </div>

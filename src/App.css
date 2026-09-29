@@ -111,7 +111,7 @@ html, body { overflow-x: clip; }
 .project-meta { display: flex; min-height: 100%; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 28px; }
 .project-arrow { width: 20px; color: var(--portfolio-coral); transition: transform 180ms ease; }
 .project-link:hover .project-arrow { transform: translate(3px,-3px); }
-.project-status { max-width: 180px; color: var(--portfolio-muted); font-family: var(--portfolio-mono); font-size: 10px; line-height: 1.45; text-align: right; text-transform: uppercase; }
+.project-meta-static { justify-content: flex-end; }
 .project-tags { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
 .project-tags [data-slot='badge'] { font-family: var(--portfolio-mono); font-size: 10px; font-weight: 400; }
 
